@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Одеський ліцей №81 — Організація освітнього процесу 2026–2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F1EFE8;
+  --cream-2:#E8E6DF;
+  --cream-3:#DEDDD3;
+  --navy:#0D223A;
+  --navy-light:#1A365D;
+  --black:#0F0F0F;
+  --grey-700:#3D3D3D;
+  --grey-500:#7A7A7A;
+  --grey-300:#CFCFCF;
+  --grey-100:#F8F9FA;
+  --white:#FFFFFF;
+  --orange:#F89557;
+  --orange-2:#FF8A4D;
+  --orange-pale:#FFE6D6;
+  --gold:#D4AF37;
+  --gold-soft:#F9F1D8;
+
+  --text:var(--black);
+  --muted:var(--grey-500);
+  --bg:var(--cream);
+  --card:var(--white);
+  --border:var(--cream-3);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;overflow-anchor:none}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.6;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* topbar */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(241,239,232,.92);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  padding:14px 0;
+}
+.topbar-inner{max-width:1280px;margin:0 auto;padding:0 20px;}
+.topbar-bar{
+  display:flex;align-items:center;gap:18px;width:100%;flex-wrap:wrap;
+  background:var(--white);
+  border-radius:999px;
+  padding:10px 18px;
+  box-shadow:0 1px 0 rgba(15,15,15,.04), 0 8px 20px rgba(15,15,15,.03);
+}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--black)}
+.logo .label{font-size:14px;color:var(--black);font-weight:800;line-height:1.2}
+.logo .label small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-top:2px;color:var(--navy)}
+
+.blocks-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+.blocks-tabs button{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:9px 16px;border-radius:999px;
+  background:transparent;color:var(--black);
+  font-size:13px;font-weight:700;
+  border:1px solid transparent;
+  transition:all .15s;
+  cursor:pointer;
+  font-family:inherit;
+}
+.blocks-tabs button:hover:not(.on){background:var(--cream)}
+.blocks-tabs button.on{background:var(--navy);color:var(--white)}
+
+/* container */
+.container{max-width:1280px;margin:30px auto;padding:0 20px;}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* cards & hero */
+.hero{
+  background:linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color:var(--white);
+  border-radius:24px;
+  padding:40px;
+  margin-bottom:30px;
+  box-shadow:0 10px 30px rgba(13,34,58,.15);
+}
+.hero h1{font-size:32px;font-weight:800;margin-bottom:12px;line-height:1.2;color:var(--white)}
+.hero p{font-size:18px;opacity:.9;margin:0;max-width:800px}
+
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px;margin-bottom:30px}
+.card{
+  background:var(--card);
+  border-radius:20px;
+  padding:24px;
+  border:1px solid var(--border);
+  box-shadow:0 4px 12px rgba(0,0,0,.03);
+}
+.card-title{font-size:20px;font-weight:800;margin-bottom:12px;color:var(--navy);display:flex;align-items:center;gap:10px}
+.badge{
+  display:inline-block;padding:4px 12px;border-radius:99px;font-size:12px;font-weight:800;text-transform:uppercase;
+}
+.badge-navy{background:var(--navy);color:var(--white)}
+.badge-gold{background:var(--gold-soft);color:#8A6D0B;border:1px solid var(--gold)}
+.badge-orange{background:var(--orange-pale);color:#A35418}
+
+/* tables */
+.table-responsive{overflow-x:auto;background:var(--card);border-radius:20px;border:1px solid var(--border);padding:10px}
+table{width:100%;border-collapse:collapse;text-align:left;font-size:14.5px}
+th{background:var(--navy);color:var(--white);font-weight:700;padding:14px 16px;border-radius:8px}
+td{padding:12px 16px;border-bottom:1px solid var(--cream-2)}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even){background:var(--grey-100)}
+.highlight{font-weight:800;color:var(--navy)}
+
+.footer{text-align:center;padding:40px 0;color:var(--grey-500);font-size:14px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-bar">
+      <a href="#" class="logo">
+        <div class="label">Одеський ліцей №81<small>2026–2027 Навчальний рік</small></div>
+      </a>
+      <div class="blocks-tabs">
+        <button class="on" onclick="switchTab('tab-main', this)">Головна</button>
+        <button onclick="switchTab('tab-model-a', this)">Модель А (Основний)</button>
+        <button onclick="switchTab('tab-model-b-days', this)">Модель Б (Чергування)</button>
+        <button onclick="switchTab('tab-model-b-bells', this)">Модель Б (Дзвінки)</button>
+        <button onclick="switchTab('tab-safety', this)">Безпека & Teams</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- TAB 1: MAIN -->
+  <div id="tab-main" class="tab-content active">
+    <div class="hero">
+      <span class="badge badge-gold" style="margin-bottom:12px">Офіційний регламент</span>
+      <h1>Організація освітнього процесу в ліцеї №81</h1>
+      <p>Забезпечення якісної освіти та безпека кожного учасника освітнього процесу в 2026–2027 навчальному році.</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-title">
+          <span class="badge badge-navy">Модель А</span> Основний режим
+        </div>
+        <p><strong>Повний очний освітній процес</strong> у приміщенні ліцею за стандартним 13-урочним розкладом (з 07:45 до 18:55).</p>
+        <ul>
+          <li>Тривалість уроку: 40–45 хвилин</li>
+          <li>Фіксовані перерви: від 5 до 20 хвилин</li>
+          <li>Для всіх класів та паралелей</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <span class="badge badge-orange">Модель Б</span> Адаптивний режим
+        </div>
+        <p><strong>Поєднання очного навчання в укритті та дистанційної роботи</strong> у разі загрози або безпекових обмежень.</p>
+        <ul>
+          <li>Скорочені уроки в укритті: 30 хвилин</li>
+          <li>Графік чергування класів по днях тижня</li>
+          <li>Асинхронна підтримка в Microsoft Teams</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 2: MODEL A -->
+  <div id="tab-model-a" class="tab-content">
+    <div class="card" style="margin-bottom:20px">
+      <h2>Модель А: Основний розклад дзвінків ліцею</h2>
+      <p>Еталонний графік занять для очного навчання в будівлі ліцею (згідно зі стендом розкладу).</p>
+    </div>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>№ уроку</th>
+            <th>Час уроку</th>
+            <th>Тривалість перерви</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="highlight">0 урок</span></td><td>07:45 – 08:25</td><td>5 хв</td></tr>
+          <tr><td><span class="highlight">1 урок</span></td><td>08:30 – 09:15</td><td>10 хв</td></tr>
+          <tr><td><span class="highlight">2 урок</span></td><td>09:25 – 10:10</td><td>10 хв</td></tr>
+          <tr><td><span class="highlight">3 урок</span></td><td>10:20 – 11:05</td><td>10 хв</td></tr>
+          <tr><td><span class="highlight">4 урок</span></td><td>11:15 – 12:00</td><td>15 хв</td></tr>
+          <tr><td><span class="highlight">5 урок</span></td><td>12:15 – 13:00</td><td>10 хв</td></tr>
+          <tr><td><span class="highlight">6 урок</span></td><td>13:10 – 13:55</td><td>10 хв</td></tr>
+          <tr><td><span class="highlight">7 урок</span></td><td>14:05 – 14:50</td><td>20 хв (велика перерва)</td></tr>
+          <tr><td><span class="highlight">8 урок</span></td><td>15:10 – 15:55</td><td>10 хв</td></tr>
+          <tr><td><span class="highlight">9 урок</span></td><td>16:05 – 16:50</td><td>5 хв</td></tr>
+          <tr><td><span class="highlight">10 урок</span></td><td>16:55 – 17:40</td><td>5 хв</td></tr>
+          <tr><td><span class="highlight">11 урок</span></td><td>17:45 – 18:25</td><td>5 хв</td></tr>
+          <tr><td><span class="highlight">12 урок</span></td><td>18:30 – 18:55</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TAB 3: MODEL B DAYS -->
+  <div id="tab-model-b-days" class="tab-content">
+    <div class="card" style="margin-bottom:20px">
+      <h2>Модель Б: Чергування класів в укритті за днями тижня</h2>
+      <p>Графік очного відвідування укриття Одеського ліцею №81 за паралелями.</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-title">Понеділок</div>
+        <p><strong>12:45–15:15:</strong> 7-А, 7-Б, 7-В, 7-Г</p>
+        <p><strong>15:20–18:55:</strong> 8-А, 8-Б, 8-Д, 6-А</p>
+        <p><span class="badge badge-orange">Дистанційно:</span> 9-А, 9-Б, 9-В</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Вівторок</div>
+        <p><strong>12:45–15:15:</strong> 5-А, 5-Б, 6-Б, 6-В</p>
+        <p><strong>15:20–18:55:</strong> 10-А, 10-Б, 10-В, 10-Г</p>
+        <p><span class="badge badge-orange">Дистанційно:</span> 10-Е, 11-Б</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Середа</div>
+        <p><strong>12:45–15:15:</strong> 5-В, 5-Г, 7-А, 7-Б</p>
+        <p><strong>15:20–18:55:</strong> 8-В, 8-А, 8-Д, 7-В</p>
+        <p><span class="badge badge-orange">Дистанційно:</span> 7-Г, 11-А, 11-В</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Четвер</div>
+        <p><strong>12:45–15:15:</strong> 5-А, 5-Б, 6-Г, 10-Е</p>
+        <p><strong>15:20–18:55:</strong> 11-А, 11-Б, 11-В, 10-В</p>
+        <p><span class="badge badge-orange">Дистанційно:</span> 10-А, 10-Б, 10-Г</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">П’ятниця</div>
+        <p><strong>12:45–15:15:</strong> 5-Г, 5-В, 6-Б, 6-В, 6-Г</p>
+        <p><strong>15:20–18:55:</strong> 9-А, 9-Б, 9-В, 8-Б, 8-В</p>
+        <p><span class="badge badge-orange">Дистанційно:</span> 6-А</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Субота</div>
+        <p><strong>З 09:00:</strong> 10-А, 10-Б, 10-Е (за окремим розкладом)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: MODEL B BELLS -->
+  <div id="tab-model-b-bells" class="tab-content">
+    <div class="card" style="margin-bottom:20px">
+      <h2>Модель Б: Розклад дзвінків в укритті та дистанційно</h2>
+      <p>Скорочені 30-хвилинні уроки з урахуванням обідніх перерв.</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-title">ІІ зміна (в укритті)</div>
+        <ul>
+          <li><strong>1 урок:</strong> 12:45 – 13:15</li>
+          <li><strong>2 урок:</strong> 13:20 – 13:50</li>
+          <li><strong>3 урок:</strong> 13:55 – 14:25</li>
+          <li><span class="badge badge-gold">Обід:</span> 14:25 – 14:45</li>
+          <li><strong>4 урок:</strong> 14:45 – 15:15</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">ІІ зміна / підзмінка (в укритті)</div>
+        <ul>
+          <li><strong>1 урок:</strong> 15:20 – 15:50</li>
+          <li><strong>2 урок:</strong> 15:55 – 16:25</li>
+          <li><span class="badge badge-gold">Обід:</span> 16:25 – 16:45</li>
+          <li><strong>3 урок:</strong> 16:45 – 17:15</li>
+          <li><strong>4 урок:</strong> 17:20 – 17:50</li>
+          <li><strong>5 урок:</strong> 17:55 – 18:25</li>
+          <li><strong>6 урок:</strong> 18:30 – 19:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Дистанційне навчання</div>
+      <p><strong>Сітка уроків:</strong> 08:30–09:15 (1) | 09:20–10:05 (2) | 10:10–10:55 (3) | 11:00–11:45 (4) | 11:55–12:40 (5) | 12:45–13:15 (6) | 13:20–13:50 (7) | 13:55–14:25 (8)</p>
+    </div>
+  </div>
+
+  <!-- TAB 5: SAFETY & TEAMS -->
+  <div id="tab-safety" class="tab-content">
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-title">Алгоритм дій під час тривоги</div>
+        <p><strong>Учитель:</strong> Припиняє урок, організовує перехід до укриття, перевіряє присутність та стан учнів.</p>
+        <p><strong>Учень:</strong> Негайно прямує до укриття або безпечного місця разом із класом чи батьками.</p>
+        <p><strong>Батьки:</strong> Контролюють перебування дитини в безпечному місці та інформують учителя за потреби.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Microsoft Teams</div>
+        <p>Офіційний цифровий простір для підтримки освітнього процесу:</p>
+        <ul>
+          <li>Доступ до відеозаписів занять та презентацій 24/7</li>
+          <li>Завдання для самостійної та асинхронної роботи</li>
+          <li>Консультації та зворотний зв'язок від учителів</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 Одеський ліцей №81. Офіційний інфо-портал для батьків та школярів.
+  </div>
+
+</div>
+
+<script>
+function switchTab(tabId, btn) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.blocks-tabs button').forEach(b => b.classList.remove('on'));
+  
+  document.getElementById(tabId).classList.add('active');
+  btn.classList.add('on');
+}
+</script>
+
+</body>
+</html>
