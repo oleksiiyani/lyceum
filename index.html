@@ -4,27 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Одеський ліцей №81 — Організація освітнього процесу 2026–2027</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 
 :root{
-  --cream:#F1EFE8;
-  --cream-2:#E8E6DF;
-  --cream-3:#DEDDD3;
-  --black:#0F0F0F;
-  --black-2:#1A1A1A;
-  --grey-700:#3D3D3D;
-  --grey-500:#7A7A7A;
-  --grey-300:#CFCFCF;
-  --grey-100:#F4F4F4;
+  --cream:#EEF5F7;
+  --cream-2:#E0EBEF;
+  --cream-3:#C9DCE3;
+  --black:#183243;
+  --black-2:#214557;
+  --grey-700:#405766;
+  --grey-500:#718693;
+  --grey-300:#B8C9D0;
+  --grey-100:#F4F8F9;
   --white:#FFFFFF;
-  --orange:#F89557;
-  --orange-2:#FF8A4D;
-  --orange-soft:#FFC1A1;
-  --orange-pale:#FFE6D6;
-  --peach:#F8DAC9;
+  --orange:#2F8F83;
+  --orange-2:#3FA79A;
+  --orange-soft:#9DD8D0;
+  --orange-pale:#E0F4F1;
+  --peach:#D9EEE9;
 
   --text:var(--black);
   --muted:var(--grey-500);
@@ -32,29 +29,45 @@
   --card:#FFFFFF;
   --border:var(--cream-3);
 
-  --error-bg:#FFE9E5; --error-bd:#D9412C; --error-tx:#9C2A1A;
-  --why-bg:#EAE8E0;   --why-bd:#3D3D3D;   --why-tx:#1A1A1A;
-  --how-bg:#FFEEDF;   --how-bd:var(--orange);  --how-tx:#A35418;
-  --ex-bg:#F4F2EA;    --ex-bd:#7A7A7A;    --ex-tx:#3D3D3D;
-  --tip-bg:#FFE6D6;   --tip-bd:var(--orange-2); --tip-tx:#8A3A0F;
+  --error-bg:#FDEDEC; --error-bd:#C94C4C; --error-tx:#9D3030;
+  --why-bg:#E9F0F3;   --why-bd:#496574;   --why-tx:#183243;
+  --how-bg:#E4F5F2;   --how-bd:var(--orange);  --how-tx:#176B63;
+  --ex-bg:#F0F5F7;    --ex-bd:#718693;    --ex-tx:#405766;
+  --tip-bg:#E0F4F1;   --tip-bd:var(--orange-2); --tip-tx:#176B63;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;overflow-anchor:none}
 html{scroll-behavior:smooth}
 body{
-  font-family:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-family:"Segoe UI",Inter,-apple-system,BlinkMacSystemFont,Roboto,Arial,sans-serif;
   color:var(--text);
-  background:var(--bg);
+  background:
+    radial-gradient(circle at 8% 8%, rgba(63,167,154,.10), transparent 24%),
+    radial-gradient(circle at 92% 24%, rgba(91,120,200,.08), transparent 22%),
+    linear-gradient(180deg,#F5FAFB 0%,#EEF5F7 48%,#EAF3F5 100%);
   line-height:1.6;
   font-size:16px;
   -webkit-font-smoothing:antialiased;
+  position:relative;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  opacity:.32;
+  background-image:
+    linear-gradient(rgba(47,143,131,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(47,143,131,.035) 1px,transparent 1px);
+  background-size:28px 28px;
 }
 h1,h2,h3{font-weight:800;letter-spacing:-.025em;margin:0}
 
 /* topbar */
 .topbar{
   position:sticky;top:0;z-index:50;
-  background:rgba(241,239,232,.92);
+  background:rgba(238,245,247,.92);
   backdrop-filter:blur(10px);
   -webkit-backdrop-filter:blur(10px);
   padding:14px 0;
@@ -70,7 +83,7 @@ h1,h2,h3{font-weight:800;letter-spacing:-.025em;margin:0}
 .mobile-progress{display:none;}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--black)}
 .logo .label{font-size:13.5px;color:var(--black);font-weight:800;letter-spacing:-.005em;line-height:1.2}
-.logo .label small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-top:2px;color:#B75A22}
+.logo .label small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-top:2px;color:#2F7E77}
 .blocks-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
 .blocks-tabs button{
   display:inline-flex;align-items:center;gap:8px;
@@ -178,7 +191,7 @@ main.content{min-width:0}
   margin:16px 0 6px;font-size:28px;line-height:1.1;color:var(--white);
   font-weight:800;letter-spacing:-.03em;position:relative;
 }
-.module-banner .desc{color:#CFCFCF;font-size:14.5px;margin:0;line-height:1.55;position:relative}
+.module-banner .desc{color:#C6D7DE;font-size:14.5px;margin:0;line-height:1.55;position:relative}
 
 .toolbar{
   display:flex;flex-wrap:wrap;gap:10px;align-items:center;
@@ -318,7 +331,7 @@ footer.site-footer{
 }
 .schedule-table td{padding:11px 15px;border-bottom:1px solid var(--cream-2);vertical-align:top}
 .schedule-table tr:last-child td{border-bottom:none}
-.schedule-table tr:nth-child(even) td{background:#FAF9F5}
+.schedule-table tr:nth-child(even) td{background:#F7FBFC}
 .schedule-table .lesson{font-weight:800;white-space:nowrap}
 .schedule-table .time{font-weight:700;white-space:nowrap}
 .schedule-table .break{color:var(--muted)}
@@ -383,11 +396,11 @@ footer.site-footer{
   border-radius:20px;padding:22px;
 }
 .teams-card h3{font-size:20px;margin:0 0 8px}
-.teams-card p{color:#CFCFCF;font-size:14px;margin:0 0 13px}
+.teams-card p{color:#C6D7DE;font-size:14px;margin:0 0 13px}
 .teams-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .teams-item{
-  background:#1A1A1A;border:1px solid #303030;border-radius:13px;
-  padding:12px 14px;font-size:13px;color:#E5E5E5;
+  background:#214557;border:1px solid #355C6C;border-radius:13px;
+  padding:12px 14px;font-size:13px;color:#E6F0F3;
 }
 .teams-item strong{color:var(--orange);display:block;margin-bottom:3px}
 
@@ -412,14 +425,97 @@ footer.site-footer{
   .hero-priority{padding:17px}
 }
 
+
+/* educational visual layer */
+.edu-decor{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.edu-icon{position:absolute;display:grid;place-items:center;width:42px;height:42px;border-radius:14px;
+  background:rgba(255,255,255,.72);border:1px solid rgba(47,143,131,.14);
+  box-shadow:0 10px 30px rgba(24,50,67,.06);font-size:20px;opacity:.55;
+  animation:floatEdu 7s ease-in-out infinite}
+.icon-book{right:5%;top:23%;animation-delay:-1.2s}
+.icon-pencil{left:2.5%;top:48%;animation-delay:-3.4s}
+.icon-cap{right:3%;bottom:18%;animation-delay:-5.1s}
+@keyframes floatEdu{
+  0%,100%{transform:translate3d(0,0,0) rotate(-3deg)}
+  50%{transform:translate3d(0,-10px,0) rotate(3deg)}
+}
+.logo .school-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;
+  background:var(--orange-pale);font-size:18px;border:1px solid rgba(47,143,131,.14)}
+.module-banner{background:linear-gradient(135deg,#183243 0%,#214D5E 68%,#2F6E76 100%);
+  box-shadow:0 14px 35px rgba(24,50,67,.12)}
+.module-banner::before{content:"📚";position:absolute;right:30px;bottom:-24px;font-size:110px;
+  opacity:.08;transform:rotate(-10deg)}
+.model-card,.schedule-wrap,.day-card,.clock-card,.safety-card,.teams-card,.tip-card,.hero-priority,.toolbar{
+  border:1px solid rgba(47,143,131,.10)}
+.model-card,.day-card,.clock-card,.safety-card{transition:transform .2s ease,box-shadow .2s ease}
+.model-card:hover,.day-card:hover,.clock-card:hover,.safety-card:hover{
+  transform:translateY(-2px);box-shadow:0 14px 30px rgba(24,50,67,.08)}
+.model-tag{border:1px solid rgba(47,143,131,.16)}
+.schedule-table th{background:linear-gradient(90deg,#214557,#2F6E76)}
+.schedule-table td{border-color:#E0EBEF}
+.day-title{border-bottom-color:var(--orange)}
+.shift.remote{background:#EAF4F6}
+.clock-row.lunch{background:var(--orange-pale)}
+.info-note{border-left-color:var(--orange);background:var(--orange-pale);color:#176B63}
+.person{background:#214557 !important}
+.teams-card{background:linear-gradient(135deg,#183243,#214D5E)}
+.teams-item strong{color:#78C9BF !important}
+.model-b-intro{display:flex;align-items:center;gap:12px;margin:0 0 14px;padding:15px 17px;
+  background:rgba(255,255,255,.82);border:1px solid rgba(47,143,131,.12);border-radius:16px}
+.model-b-intro .mini-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;
+  background:var(--orange-pale);font-size:20px}
+.model-b-intro strong{display:block;font-size:15px}
+.model-b-intro span:last-child{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.day-card{scroll-margin-top:110px}
+.lesson-heading{scroll-margin-top:110px}
+.section-anchor{height:1px}
+.site-footer{margin:0 auto;padding:28px 20px 42px;max-width:1280px;text-align:center}
+.footer-school{font-size:17px;font-weight:800;letter-spacing:-.01em;color:#2F6E76}
+.footer-subtitle{margin-top:4px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#718693}
+@media (max-width:700px){
+  .edu-icon{display:none}
+  .topbar-inner{padding:0 12px}
+  .topbar{padding:8px 0}
+  .topbar-bar{width:100%;gap:12px}
+  .logo{width:100%}
+  .blocks-tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+  .blocks-tabs::-webkit-scrollbar{display:none}
+  .blocks-tabs button{flex:0 0 auto;white-space:nowrap}
+  .shell{padding:18px 12px 55px;gap:18px}
+  aside.side{margin:0}
+  .side-list{display:flex;flex-direction:row;overflow-x:auto;gap:7px;padding:2px 1px 7px;scrollbar-width:none}
+  .side-list::-webkit-scrollbar{display:none}
+  .side-item{flex:0 0 auto;white-space:nowrap;padding:9px 12px}
+  .progress-card{display:none}
+  .module-banner{padding:23px 20px;border-radius:20px}
+  .module-banner h2{font-size:24px}
+  .module-banner::before{font-size:78px;right:10px;bottom:-15px}
+  .schedule-wrap{border-radius:16px}
+  .schedule-table{min-width:620px}
+  .schedule-table th,.schedule-table td{padding:10px 12px}
+  .model-b-intro{padding:13px}
+  .day-card{scroll-margin-top:145px}
+  .lesson-heading{scroll-margin-top:145px}
+  .footer-school{font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto !important;animation:none !important;transition:none !important}
+}
+
 </style>
 </head>
 <body>
+<div class="edu-decor" aria-hidden="true">
+  <span class="edu-icon icon-book">📚</span>
+  <span class="edu-icon icon-pencil">✏️</span>
+  <span class="edu-icon icon-cap">🎓</span>
+</div>
 
 <header class="topbar">
   <div class="topbar-inner">
     <div class="topbar-bar">
-      <a href="#" class="logo" onclick="return false;">
+      <a href="#" class="logo" onclick="return false;" aria-label="Одеський ліцей №81">
+        <span class="school-icon" aria-hidden="true">🏫</span>
         <span class="label">Одеський ліцей №81<small>2026–2027 навчальний рік</small></span>
       </a>
       <nav class="blocks-tabs" id="blockNav" aria-label="Основна навігація"></nav>
@@ -449,10 +545,8 @@ footer.site-footer{
 </div>
 
 <footer class="site-footer">
-  <span class="brandmark">
-    <span class="word">ОДЕСЬКИЙ <span class="tilt">ЛІЦЕЙ №81</span></span>
-    <span class="year">2026–2027</span>
-  </span>
+  <div class="footer-school">Одеський ліцей №81</div>
+  <div class="footer-subtitle">Організація освітнього процесу · 2026–2027</div>
 </footer>
 
 <script>
@@ -505,7 +599,7 @@ function renderBlockNav() {
     btn.addEventListener("click", () => {
       state.tab = tab.id;
       renderAll();
-      window.scrollTo({top:0, left:0, behavior:"instant"});
+      window.scrollTo({top:0, left:0, behavior:"auto"});
       updateReadProgress();
     });
     nav.appendChild(btn);
@@ -519,13 +613,30 @@ function renderModuleNav() {
   tab.sections.forEach((section, index) => {
     const btn = document.createElement("button");
     btn.className = "side-item";
+    btn.dataset.section = String(index);
     btn.innerHTML = '<span>' + escapeHtml(section) + '</span>';
     btn.addEventListener("click", () => {
       const target = document.getElementById("section-" + index);
-      if (target) target.scrollIntoView({behavior:"smooth", block:"start"});
+      if (!target) return;
+      const headerOffset = window.innerWidth <= 700 ? 92 : 104;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({top, left:0, behavior:"smooth"});
     });
     nav.appendChild(btn);
   });
+  setTimeout(updateActiveSection, 0);
+}
+
+function updateActiveSection() {
+  const buttons = [...document.querySelectorAll(".side-item")];
+  const targets = buttons.map(btn => document.getElementById("section-" + btn.dataset.section)).filter(Boolean);
+  if (!targets.length) return;
+  const marker = (window.innerWidth <= 700 ? 120 : 140);
+  let active = 0;
+  targets.forEach((target, index) => {
+    if (target.getBoundingClientRect().top <= marker) active = index;
+  });
+  buttons.forEach((btn, index) => btn.classList.toggle("on", index === active));
 }
 
 function updateReadProgress() {
@@ -547,6 +658,7 @@ window.addEventListener("scroll", () => {
   if (!progressTicking) {
     window.requestAnimationFrame(() => {
       updateReadProgress();
+      updateActiveSection();
       progressTicking = false;
     });
     progressTicking = true;
@@ -566,7 +678,7 @@ function renderBanner() {
   const info = titles[state.tab];
   document.getElementById("moduleBanner").innerHTML = `
     <div class="module-banner">
-      <span class="tag">Одеський ліцей №81 · 2026–2027</span>
+      <span class="tag">🏫 Одеський ліцей №81 · 2026–2027</span>
       <h2>${escapeHtml(info[0])}</h2>
       <p class="desc">${escapeHtml(info[1])}</p>
     </div>
@@ -638,18 +750,18 @@ function renderCards() {
   if (state.tab === 2) {
     const rows = [
       ["0 урок","07:45 – 08:25","5 хв"],
-      ["1 урок","08:30 – 09:15","10 хв"],
-      ["2 урок","09:25 – 10:10","10 хв"],
-      ["3 урок","10:20 – 11:05","10 хв"],
-      ["4 урок","11:15 – 12:00","15 хв"],
-      ["5 урок","12:15 – 13:00","10 хв"],
-      ["6 урок","13:10 – 13:55","10 хв"],
-      ["7 урок","14:05 – 14:50","20 хв · велика перерва"],
-      ["8 урок","15:10 – 15:55","10 хв"],
-      ["9 урок","16:05 – 16:50","5 хв"],
-      ["10 урок","16:55 – 17:40","5 хв"],
-      ["11 урок","17:45 – 18:25","5 хв"],
-      ["12 урок","18:30 – 18:55","—"]
+      ["1 урок","08:30 – 09:15","5 хв"],
+      ["2 урок","09:20 – 10:05","5 хв"],
+      ["3 урок","10:10 – 10:55","5 хв"],
+      ["4 урок","11:00 – 11:45","5 хв"],
+      ["5 урок","11:50 – 12:35","10 хв"],
+      ["6 урок","12:45 – 13:30","5 хв"],
+      ["7 урок","13:35 – 14:20","20 хв · велика перерва"],
+      ["8 урок","14:40 – 15:25","15 хв"],
+      ["9 урок","15:40 – 16:25","5 хв"],
+      ["10 урок","16:30 – 17:15","5 хв"],
+      ["11 урок","17:20 – 18:05","5 хв"],
+      ["12 урок","18:10 – 18:55","—"]
     ];
     container.innerHTML = `
       ${lessonHeading(0, "Основний розклад")}
@@ -668,20 +780,23 @@ function renderCards() {
 
   if (state.tab === 3) {
     const days = [
-      ["Понеділок", [["12:45–15:15","7-А, 7-Б, 7-В, 7-Г"],["15:20–18:55","8-А, 8-Б, 8-Д, 6-А"],["Дистанційно","9-А, 9-Б, 9-В"]]],
-      ["Вівторок", [["12:45–15:15","5-А, 5-Б, 6-Б, 6-В"],["15:20–18:55","10-А, 10-Б, 10-В, 10-Г"],["Дистанційно","10-Е, 11-Б"]]],
-      ["Середа", [["12:45–15:15","5-В, 5-Г, 7-А, 7-Б"],["15:20–18:55","8-В, 8-А, 8-Д, 7-В"],["Дистанційно","7-Г, 11-А, 11-В"]]],
-      ["Четвер", [["12:45–15:15","5-А, 5-Б, 6-Г, 10-Е"],["15:20–18:55","11-А, 11-Б, 11-В, 10-В"],["Дистанційно","10-А, 10-Б, 10-Г"]]],
-      ["П’ятниця", [["12:45–15:15","5-Г, 5-В, 6-Б, 6-В, 6-Г"],["15:20–18:55","9-А, 9-Б, 9-В, 8-Б, 8-В"],["Дистанційно","6-А"]]],
-      ["Субота", [["З 09:00","10-А, 10-Б, 10-Е · за розкладом"]]]
+      ["Понеділок, 21.09", [["12:45–15:15","7-А, 7-Б, 7-В, 7-Г"],["15:20–18:55","8-А, 8-Б, 8-Д, 6-А"],["Дистанційно","9-А, 9-Б, 9-В"]]],
+      ["Вівторок, 22.09", [["12:45–15:15","5-А, 5-Б, 6-Б, 6-В"],["15:20–18:55","10-А, 10-Б, 10-В, 10-Г"],["Дистанційно","10-Е, 11-Б"]]],
+      ["Середа, 23.09", [["12:45–15:15","5-В, 5-Г, 7-А, 7-Б"],["15:20–18:55","8-В, 8-А, 8-Д, 7-В"],["Дистанційно","7-Г, 11-А, 11-В"]]],
+      ["Четвер, 24.09", [["12:45–15:15","5-А, 5-Б, 6-Г, 10-Е"],["15:20–18:55","11-А, 11-Б, 11-В, 10-В"],["Дистанційно","10-А, 10-Б, 10-Г"]]],
+      ["П’ятниця, 25.09", [["12:45–15:15","5-Г, 5-В, 6-Б, 6-В, 6-Г"],["15:20–18:55","9-А, 9-Б, 9-В, 8-Б, 8-В"],["Дистанційно","6-А"]]],
+      ["Субота, 26.09", [["З 09:00","10-А, 10-Б, 10-Е · за розкладом"]]]
     ];
     container.innerHTML = `
-      ${lessonHeading(0, "Графік очного відвідування укриття")}
-      <p class="section-intro">Очне відвідування укриття відбувається за ротаційним графіком. Для класів, які не входять до очної зміни конкретного дня, передбачене дистанційне навчання.</p>
+      <div class="model-b-intro">
+        <span class="mini-icon" aria-hidden="true">🏫</span>
+        <div><strong>Модель навчання «Б»</strong><span>Графік очного відвідування укриття</span></div>
+      </div>
+      <p class="section-intro">У зв’язку з частими повітряними тривогами, які не дають можливості повноцінно проводити уроки, розроблено розклад з урахуванням можливостей проведення занять в укритті Одеського ліцею №81 для організації освітнього процесу в умовах безпекових обмежень. Навчання в укритті проводиться за скороченим розкладом: 6 уроків по 30 хвилин відповідно до основного розкладу. Для класів, які не зазначені в переліку очного навчання, освітній процес здійснюється дистанційно.</p>
       <div class="days-grid">
         ${days.map((day, i) => `
-          <article class="day-card ${day[0] === "Субота" ? "full" : ""}" id="day-${i}">
-            <div class="day-title"><h3>${day[0]}</h3><span class="day-badge">${day[0] === "Субота" ? "за розкладом" : "ротація"}</span></div>
+          <article class="day-card ${day[0].startsWith("Субота") ? "full" : ""}" id="section-${i}">
+            <div class="day-title"><h3>${day[0]}</h3><span class="day-badge">${day[0].startsWith("Субота") ? "за розкладом" : "ротація"}</span></div>
             ${day[1].map((s, j) => `
               <div class="shift ${s[0] === "Дистанційно" ? "remote" : ""}">
                 <div class="shift-time">${s[0]}</div>
@@ -763,6 +878,7 @@ function renderAll() {
   renderBanner();
   renderCards();
   updateReadProgress();
+  setTimeout(updateActiveSection, 0);
 }
 
 renderAll();
